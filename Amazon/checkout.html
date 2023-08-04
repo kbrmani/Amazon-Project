@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkout</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/shared/general.css" />
+    <link rel="stylesheet" href="styles/pages/checkout/checkout-header.css" />
+    <link rel="stylesheet" href="styles/pages/checkout/checkout.css" />
+  </head>
+  <body>
+    <div class="checkout-header">
+      <div class="header-content">
+        <div class="checkout-header-left-section">
+          <a href="amazon.html">
+            <img class="amazon-logo" src="images/amazon-logo.png" />
+            <img
+              class="amazon-mobile-logo"
+              src="images/amazon-mobile-logo.png"
+            />
+          </a>
+        </div>
+
+        <div class="checkout-header-middle-section">
+          Checkout (<a
+            class="return-to-home-link js-return-to-home-link"
+            id=""
+            href="./index.html"
+            >0 items</a
+          >)
+        </div>
+
+        <div class="checkout-header-right-section">
+          <img src="images/icons/checkout-lock-icon.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="page-title">Review your order</div>
+
+      <div class="checkout-container">
+        <div class="js-cart-summary">
+          <div class="empty-cart-msg">Your cart is empty.</div>
+          <a class="view-product-button" href="./index.html">View products</a>
+        </div>
+      </div>
+
+      <div class="checkout-grid">
+        <div class="order-summary js-order-summary"></div>
+
+        <div class="payment-summary">
+          <div class="payment-summary-title">Order Summary</div>
+
+          <div class="payment-summary-row">
+            <div
+              class="order-summary-item-quantity"
+              id="head-total-item-quantity"
+            >
+              Items(0)
+            </div>
+            <div class="payment-summary-money" id="total-products-payment">
+              $0
+            </div>
+          </div>
+
+          <div class="payment-summary-row">
+            <div>Shipping &amp; handling:</div>
+            <div class="payment-summary-money-delivery">$0</div>
+          </div>
+
+          <div class="payment-summary-row subtotal-row">
+            <div>Total before tax:</div>
+            <div class="payment-before-tax" id="total-before-tax">$0</div>
+          </div>
+
+          <div class="payment-summary-row">
+            <div>Estimated tax (10%):</div>
+            <div class="estimated-tax" id="total-tax">$0</div>
+          </div>
+
+          <div class="payment-summary-row total-row">
+            <div>Order total:</div>
+            <div class="summary-order-total" id="grand-total">$0</div>
+          </div>
+
+          <div class="paypal-toggle">
+            Use PayPal <input type="checkbox" class="paypal-checkbox" />
+          </div>
+
+          
+          <button class="place-order-button button-primary">
+            Place your order
+          </button>
+          <div class="payment-card hide">
+            <a href="https://www.sandbox.paypal.com/checkoutnow?sessionID=uid_649c33fdd7_mdu6mza6mzq&buttonSessionID=uid_6ea9873469_mdu6mza6mzy&stickinessID=uid_255ed793f7_mtk6mja6ndq&smokeHash=&fundingSource=paypal&buyerCountry=IN&locale.x=en_IN&commit=true&clientID=AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R&env=sandbox&sdkMeta=eyJ1cmwiOiJodHRwczovL3d3dy5wYXlwYWwuY29tL3Nkay9qcz9jbGllbnQtaWQ9dGVzdCZjdXJyZW5jeT1VU0QmZGlzYWJsZS1mdW5kaW5nPXZlbm1vLHBheWxhdGVyIiwiYXR0cnMiOnsiZGF0YS11aWQiOiJ1aWRfZHZqanphc3Jwb3VnaXltaXNna3VzaHZvbXdlamh3In19&xcomponent=1&version=5.0.390&token=2VJ43011FS6734427">
+            <button class="paypal-button">
+              <img
+                class="palpal-img"
+                 src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-150px.png"
+                alt=""
+              />
+            </button>
+          </a>
+            <button class="payment-paypal">
+              <i class="fa-regular fa-credit-card fa-xl"></i>
+             <p>Debit or Credit Card</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="scripts/checkout.js"></script>
+    <script src="https://kit.fontawesome.com/01fd631292.js" crossorigin="anonymous"></script>
+  </body>
+</html>
